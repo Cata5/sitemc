@@ -1,3 +1,8 @@
+::root{
+  --btn-bgcolor:#ff4820;
+  --txt-color-1:#81AFDD;
+  --body-bg:#04101e;
+}
 body {
     background-color: #04101e;
     line-height: 1.5;
@@ -40,38 +45,6 @@ img {
     color: white;
     align-items: baseline;
 }
-
-.buttons {
-    display: flex;
-    flex: 1;
-    justify-content: end;
-}
-
-.buttons button {
-    border-radius: 5px;
-    min-width: 125px;
-    height: 50px;
-    border: none;
-    color: white;
-    background: transparent;
-}
-
-.buttons button:hover,.input-container button {
-    cursor: pointer;
-}
-
-.buttons button:nth-child(1):hover {
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, .1);
-}
-
-.buttons button:nth-child(2),
-.input-container button {
-    background: #ff4820;
-
-}
-
-
 .header-container {
     max-width: 100%;
     margin:auto;
@@ -102,30 +75,7 @@ img {
     flex: 1 1 100%;
     margin-top: 10rem;
   }
-  
-  .input-container {
-    display: flex;
-  }
-  
-  .input-container input {
-    border-radius: 5px 0 0 5px;
-    border: none;
-    width: 100%;
-    max-width: 600px;
-    height: 50px; /* Increase the height */
-    text-indent: 1.5rem;
-    background-color: #052d56;
-    flex: 1 1 100%;
-  }
-  
-  .input-container button {
-    color: white;
-    width: 125px;
-    height: 50px; /* Increase the height */
-    border: none;
-    border-radius: 0 5px 5px 0;
-  }
-  
+
   .content-container{
     width:100%;
     background-color: #042c54;
@@ -236,7 +186,7 @@ img {
   font-size: clamp(2rem,6vw,3rem);
 
 }
-.container-content2 div::before{
+.container-content2 .first::before{
   content: "";
   position: absolute;
   width: 75px;
@@ -268,38 +218,8 @@ img {
 .image img{
   max-width: 100%;
 }
-content3{
-  display: flex;
-  gap: 5rem;
-}
-bar{
-  margin-top: 5rem ;
-  background: linear-gradient(to right, #AE67FA, #00FFA3);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border-radius: 10px;
-  max-width: 100%;
-}
-bar p,bar h1{
-  color: black;
-}
-bar *{
-  margin: 1rem 2.5rem;
-}
-bar button{
-  width: 200px;
-  height: 60px;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 100vw;
-}
-bar div:last-child{
-  display:flex;
-  flex: 1;
-  justify-content: flex-end;
-}
+
+
 article{
   display: flex;
   flex-direction: column;
@@ -348,7 +268,7 @@ article h1{
   display: flex;
   flex-direction: column ;
 }
-content3,.grid-container{
+.grid-container{
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -365,7 +285,9 @@ article h1{
 }
 @media screen and (max-width: 500px){
   .container-text div{
-    display: block;
+    display: flex;
+    flex-direction: column;
+
   }
   bar{
     display: flex;
@@ -405,4 +327,16 @@ article h1{
     .header-container{
         flex-direction: column;
     }
+}
+.pfp{
+  align-self: center;
+  width: 125px;
+  aspect-ratio: 1;
+  border: double 4px transparent;
+  border-radius: 80px;
+  margin-top: 1rem;
+  background-image: linear-gradient(white, white), linear-gradient(to right, #AE67FA, #00FFA3);;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
 }
