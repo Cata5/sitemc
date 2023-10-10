@@ -116,7 +116,7 @@ img {
   .middle,.lower{
     color: white;
   }
-  .middle h1,.container-members > h1,.right h1,proiecte h1{
+  .middle h1,.container-members > h1,.right h1,proiecte h1,about h1{
     background-image: linear-gradient(to right, #AE67FA, #00FFA3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
