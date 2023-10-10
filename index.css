@@ -17,7 +17,9 @@ body {
     box-sizing: border-box;
 
 }
-
+html{
+  scroll-behavior: smooth;
+}
 img {
     display: block;
 }
@@ -44,6 +46,7 @@ img {
     text-decoration: none;
     color: white;
     align-items: baseline;
+    cursor: pointer;
 }
 .header-container {
     max-width: 100%;
@@ -113,7 +116,7 @@ img {
   .middle,.lower{
     color: white;
   }
-  .middle h1,.container-content2 > h1,.right h1,article h1{
+  .middle h1,.container-members > h1,.right h1,proiecte h1{
     background-image: linear-gradient(to right, #AE67FA, #00FFA3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -148,8 +151,9 @@ img {
     border-radius: 10px;
     background: linear-gradient(to right, #AE67FA, #00FFA3);
 }
-.container-content2{
+.container-members{
   display: flex;
+  flex-direction: column;
   gap: 4vw;
 }
 .container-text div h1{
@@ -181,12 +185,12 @@ img {
 .container-text div{
   display: flex;
 }
-.container-content2 > h1{
+.container-members > h1{
   max-width: 600px;
   font-size: clamp(2rem,6vw,3rem);
 
 }
-.container-content2 .first::before{
+.container-members .first::before{
   content: "";
   position: absolute;
   width: 75px;
@@ -220,11 +224,11 @@ img {
 }
 
 
-article{
+proiecte{
   display: flex;
   flex-direction: column;
 }
-article h1{
+proiecte h1{
   font-size: clamp(1.5rem,8vw,5rem);
   max-width: 60%;
 }
@@ -250,6 +254,7 @@ article h1{
   max-width: 400px;
   justify-content: center;
   background-color: #042C54;
+  cursor: pointer;
 }
 .grid-container div:nth-child(1){
   grid-column: 1;
@@ -264,7 +269,7 @@ article h1{
 
 
 @media screen and (max-width: 1150px){
-.container-content2{
+.container-members{
   display: flex;
   flex-direction: column ;
 }
@@ -273,7 +278,7 @@ article h1{
   flex-direction: column;
   gap: 3rem;
 }
-article h1{
+proiecte h1{
   max-width: 100%;
 }
 .grid-container > div{
@@ -300,8 +305,7 @@ article h1{
 
 @media screen and (max-width: 900px){
     .lower,.high,bar{
-        display: flex;
-        flex-direction: column ;
+        display: block;
     }
 
     .lower{
@@ -329,7 +333,6 @@ article h1{
     }
 }
 .pfp{
-  align-self: center;
   width: 125px;
   aspect-ratio: 1;
   border: double 4px transparent;

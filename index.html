@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css" />
+    <script src="./index.js"></script>
     <title>GPT-3</title>
 </head>
 
@@ -26,20 +27,18 @@
                     fill="white" />
             </svg>
             <ul class="nav-links-container">
-                <li><a href="">Home</a></li>
-                <li><a href="">What is GPT?</a></li>
-                <li><a href="">Open Ai</a></li>
-                <li><a href="">Case Studies</a></li>
-                <li><a href="">Library</a></li>
+                <li><a onclick="scrollToSection('home')">Home</a></li>
+                <li><a onclick="scrollToSection('about')">Despre Proiect</a></li>
+                <li><a onclick="scrollToSection('about-us')">Ce ne propunem</a></li>
+                <li><a onclick="scrollToSection('members')">Membrii echipei</a></li>
+                <li><a onclick="scrollToSection('projects')">Proiecte</a></li>
             </ul>
         </div>
     </nav>
     <header>
         <div class="header-container">
             <div class="text">
-                <h1>Let’s Build Something
-                    amazing with GPT-3
-                    OpenAI</h1>
+                <h1>Despre Proiect</h1>
                 <p>
                     Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing.
                     Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow
@@ -56,10 +55,7 @@
     <content>
         <div class="content-container">
             <div class="high">
-                <h1>What is GPT-3</h1>
-                <p>We so opinion friends me message as delight. Whole front do of plate heard oh ought. His defective
-                    nor convinced residence own. Connection has put impossible own apartments boisterous. At jointure
-                    ladyship an insisted so humanity he. Friendly bachelor entrance to on by.</p>
+                <h1>Ce ne propunem</h1>
             </div>
             <div class="middle">
                 <h1>The possibilities are beyond your imagination</h1>
@@ -85,8 +81,8 @@
             <div class="light"></div>
         </div>
     </content>
-    <content2>
-        <div class="container-content2">
+    <members id="members">
+        <div class="container-members">
             <!-- <h1>The Future is Now and You Just Need To Realize It. Step into Future Today & Make it Happen.</h1> -->
             <h1>
                 Membrii Echipei
@@ -118,32 +114,32 @@
                 </div>
             </div>
         </div>
-    </content2>
-    <article>
+    </members>
+    <proiecte id="projects">
         <h1>Proiecte</h1>
-            <div class="grid-container">
-                <div class="first">
-                    <img src="./assets/blog01.png" alt="">
-                    <p>GPT-3 and Open  AI is the future. Let us exlore how it is?</p>
-                </div>
-                <div>
-                    <img src="./assets/blog02.png"" alt="">
-                    <p>GPT-3 and Open  AI is the future. Let us exlore how it is?</p>
-                </div>
-                <div>
-                    <img src="./assets/blog03.png"" alt="">
-                    <p>GPT-3 and Open  AI is the future. Let us exlore how it is?</p>
-                </div>
-                <div>
-                    <img src="./assets/blog04.png"" alt="">
-                    <p>GPT-3 and Open  AI is the future. Let us exlore how it is?</p>
-                </div>
-                <div>
-                    <img src="./assets/blog05.png"" alt="">
-                    <p>GPT-3 and Open  AI is the future. Let us exlore how it is?</p>
-                </div>
+        <div class="grid-container">
+            <div class="first" onclick="redirectToPage('./p1.html')">
+                <img src="./assets/blog01.png" alt="">
+                <p>GPT-3 and Open AI is the future. Let us exlore how it is?</p>
             </div>
-    </article>
+            <div onclick="redirectToPage('./p1.html')">
+                <img src="./assets/blog02.png"" alt="" >
+                    <p>GPT-3 and Open  AI is the future. Let us exlore how it is?</p>
+                </div>
+                <div onclick="redirectToPage('./p1.html')">
+                    <img src=" ./assets/blog03.png"" alt="" >
+                <p>GPT-3 and Open AI is the future. Let us exlore how it is?</p>
+            </div>
+            <div onclick="redirectToPage('./p1.html')">
+                <img src="./assets/blog04.png"" alt="" >
+                    <p>GPT-3 and Open  AI is the future. Let us exlore how it is?</p>
+                </div>
+                <div onclick="redirectToPage('./p1.html')">
+                    <img src=" ./assets/blog05.png"" alt="" >
+                <p>GPT-3 and Open AI is the future. Let us exlore how it is?</p>
+            </div>
+        </div>
+    </proiecte>
 </body>
 
 </html>
