@@ -153,6 +153,7 @@ img {
 .container-members{
   display: flex;
   flex-direction: column;
+  margin: auto;
   gap: 4vw;
   margin-bottom: 13vw;
 }
@@ -199,6 +200,8 @@ img {
   width: 250px;
   aspect-ratio: 0.8;
   background-color: white;
+  display: flex;
+  align-items: center;
 }
 .right p:last-child{
   color: #81AFDD;
@@ -282,6 +285,7 @@ proiecte h1{
 .container-members{
   display: flex;
   flex-direction: column ;
+  margin: auto;
 }
 .grid-container{
   display: flex;
@@ -302,7 +306,6 @@ proiecte h1{
   .container-text div{
     display: flex;
     flex-direction: column;
-
   }
   bar{
     display: flex;
