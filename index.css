@@ -116,7 +116,7 @@ img {
   .middle,.lower{
     color: white;
   }
-  .middle h1,.container-members > h1,.right h1,proiecte h1,about h1{
+  .middle h1,.container-members > h1,.right h1,proiecte h1,about h1,header h1,members2 h1{
     background-image: linear-gradient(to right, #AE67FA, #00FFA3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -342,4 +342,16 @@ proiecte h1{
   background-origin: border-box;
   background-clip: padding-box, border-box;
 
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+members2 .container-members2 div{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap:5rem;
+margin: auto;
 }
