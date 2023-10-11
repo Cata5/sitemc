@@ -49,7 +49,6 @@ img {
     cursor: pointer;
 }
 .header-container {
-    max-width: 100%;
     margin:auto;
     display: flex;
     padding: 1rem;
@@ -64,8 +63,7 @@ img {
   }
   
   .img img {
-    max-width: 100%;
-
+    max-width: 100% !important;
   }
   
   .header-container p {
@@ -75,7 +73,7 @@ img {
   }
   
   .text {
-    flex: 1 1 100%;
+
     margin-top: 2rem;
   }
 
@@ -373,4 +371,7 @@ margin: auto;
   width: 250px;
   aspect-ratio: 0.8;
   background-color: white;
+}
+.nav-container img{
+max-width: 3.5%;
 }
