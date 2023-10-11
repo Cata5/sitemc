@@ -179,8 +179,11 @@ img {
 }
 .container-text{
   display:flex;
-  flex-direction: column;
-  gap: 3rem;
+  flex-direction: row;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
 }
 .container-text div{
   display: flex;
@@ -192,12 +195,10 @@ img {
   font-size: clamp(2rem,6vw,3rem);
 
 }
-.container-members .first::before{
-  content: "";
-  position: absolute;
-  width: 75px;
-  height: 4px;
-  border-radius: 10px;
+.first{
+  width: 250px;
+  aspect-ratio: 0.8;
+  background-color: white;
 }
 .right p:last-child{
   color: #81AFDD;
