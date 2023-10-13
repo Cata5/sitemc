@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css" />
+    <script src="../index.js"></script>
+    <title>Orausl Eco-Tech</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <h1 style="color: white; font-weight: 800; font-size: 25px;">ECO-TECH</h1>
+            <ul class="nav-links-container">
+                <li><a onclick="redirectToPage('../index.html')">Acasa</a></li>
+                <li><a onclick="redirectToPage('../Trivale/Trivale.html')">ᴛʀɪᴠᴀʟᴇ</a></li>
+                <li><a onclick="redirectToPage('../Gavana/Gavana.html')">ɢᴀᴠᴀɴᴀ </a></li>
+                <li><a onclick="redirectToPage('../Centru/Centru.html')">ᴄᴇɴᴛʀᴜ</a></li>
+                <li><a onclick="redirectToPage('../Craiovei/Craiovei.html')">ᴄʀᴀɪᴏᴠᴇɪ</a></li>
+                <li><a onclick="redirectToPage('../Prundu/Prundu.html')">ᴘʀᴜɴᴅᴜ</a></li>
+                <li><a onclick="redirectToPage('../Tudor Vladimirescu/TV.html')">ᴛᴜᴅᴏʀ ᴠᴀʟᴅɪᴍɪʀᴇꜱᴄᴜ</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="header-container">
+            <div class="text">
+                <center>
+                    <h1>Razboieni</h1>
+                </center>
+            </div>
+        </div>
+    </header>
+    <content>
+        <div class="content-container" style="text-align: center;">
+            <div class="high">
+                <h1 style="text-align: center; min-width: 100%;">Valori Calitatea Aerului</h1>
+            </div>
+            <div class="middle" style="text-align: left; justify-content: center; width: 100%;">
+                <!-- First Chart (Aer) -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+                <canvas id="myChart" style="width: 100%; max-width: 800px"></canvas>
+                <script>
+                    const xValuesAer = ["CO2", "O2", "H2", "N2", "Ar"];
+                    const yValuesAer = [10, 31, 21, 5, 8];
+                    const barColorsAer = ["red", "green", "blue", "orange", "brown"];
+
+                    new Chart("myChart", {
+                        type: "bar",
+                        data: {
+                            labels: xValuesAer,
+                            datasets: [{
+                                backgroundColor: barColorsAer,
+                                data: yValuesAer
+                            }]
+                        },
+                        options: {
+                            legend: { display: false },
+                            title: {
+                                display: true,
+                                text: ""
+                            },
+                            scales: {
+                                xAxes: [{
+                                    ticks: {
+                                        fontColor: "white" // Set the x-axis label color to white
+                                    }
+                                }],
+                                yAxes: [{
+                                    ticks: {
+                                        fontColor: "white" // Set the y-axis label color to white
+                                    }
+                                }]
+                            }
+                        }
+                    });
+                </script>
+                <!-- First Chart (Aer) -->
+            </div>
+            <div class="lower">
+                <div class="first">
+                    <div class="line"></div>
+                    <h1>Efecte CO2</h1>
+                    <p>Ca si efecte negative acesta actioneaza ca un gaz de sera incalzind atmosfera dar absoarbe
+                        radiatile infrarosii. </p>
+                </div>
+                <div class="second">
+                    <div class="line"></div>
+                    <h1>Efecte O2</h1>
+                    <p>Oxigenul mentine arderea si ne permite sa traim pe pamant deoarece face parte din necesitatile
+                        noastre. </p>
+                </div>
+                <div class="third">
+                    <div class="line"></div>
+                    <h1>Efecte H2</h1>
+                    <p>Hidrogenul poate penetra usor membranele celulare si neutraliza radicalii liberi, prevenind boli
+                        cronice. </p>
+                </div>
+            </div>
+            <div class="light"></div>
+        </div>
+    </content>
+    <content2>
+        <div class="content-container2">
+            <h1 style="text-align: center;">Valori Calitatea Apei</h1>
+            <div class="middle" style="text-align: left; justify-content: center; width: 100%;">
+                <canvas id="myChart2" style="width: 100%; max-width: 750px; text-align: center;"></canvas>
+                <script>
+                    const xValuesApa = ["Cl", "NH4", "I",];
+                    const yValuesApa = [15, 45, 29, 10, 20, 30, 40, 50];
+                    const barColorsApa = ["blue", "green", "purple", "red", "orange"];
+
+                    new Chart("myChart2", {
+                        type: "bar",
+                        data: {
+                            labels: xValuesApa,
+                            datasets: [{
+                                backgroundColor: barColorsApa,
+                                data: yValuesApa
+                            }]
+                        },
+                        options: {
+                            legend: { display: false },
+                            title: {
+                                display: true,
+                                text: ""
+                            },
+                            scales: {
+                                xAxes: [{
+                                    ticks: {
+                                        fontColor: "white" // Set the x-axis label color to white
+                                    }
+                                }],
+                                yAxes: [{
+                                    ticks: {
+                                        fontColor: "white" // Set the y-axis label color to white
+                                    }
+                                }]
+                            }
+                        }
+                    });
+                </script>
+                <!-- First Chart (Aer) -->
+            </div>
+            <div class="lower">
+                <div class="second">
+                    <div class="line"></div>
+                    <h1>Efecte CO2</h1>
+                    <p>Ca si efecte negative acesta actioneaza ca un gaz de sera incalzind atmosfera dar absoarbe
+                        radiatile infrarosii. </p>
+                </div>
+                <div class="second">
+                    <div class="line"></div>
+                    <h1>Efecte O2</h1>
+                    <p>Oxigenul mentine arderea si ne permite sa traim pe pamant deoarece face parte din necesitatile
+                        noastre. </p>
+                </div>
+                <div class="second">
+                    <div class="line"></div>
+                    <h1>Efecte H2</h1>
+                    <p>Hidrogenul poate penetra usor membranele celulare si neutraliza radicalii liberi, prevenind boli
+                        cronice. </p>
+                </div>
+            </div>
+        </div>
+    </content2>
+</body>
+
+</html>
