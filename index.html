@@ -12,7 +12,7 @@
 <body>
     <nav>
         <div class="nav-container">
-            <h1 >ECO-TECH</h1>
+            <h1>ECO-TECH</h1>
             <ul class="nav-links-container">
                 <li><a onclick="redirectToPage('./Trivale/Trivale.html')">ᴛʀɪᴠᴀʟᴇ</a></li>
                 <li><a onclick="redirectToPage('./Gavana/Gavana.html')">ɢᴀᴠᴀɴᴀ </a></li>
@@ -28,7 +28,7 @@
     <header>
         <div class="header-container">
             <div class="text">
-                <h1>Despre Proiect</h1>
+                <h1 class="title">Despre Proiect</h1>
                 <h2>Descriere :</h2>
                 <p>
                 <ul>
@@ -89,7 +89,7 @@
     </header>
     <content>
         <div class="content-container">
-            <h1 style="text-align: center;">Ce ne propunem</h1>
+            <h1 class="title">Ce ne propunem</h1>
             <div class="middle" style="
             justify-content: center;">
                 <h1 style="max-width: 100%;">Imbunatatirea calitatii vitetii din orasul Pitesti</h1>
@@ -116,71 +116,85 @@
         </div>
     </content>
     <members id="members">
-        <div class="container-members">
-            <!-- <h1>The Future is Now and You Just Need To Realize It. Step into Future Today & Make it Happen.</h1> -->
-            <div class="line" style="width: 100%;"></div>
-            <h1 style="text-align: center; min-width: 100%;">
-                Departamente
-            </h1>
-            <div class="container-text">
-                <div class="first">
-                    <h2>Departament WEB Desing</h2>
-                    <div class="pfp">
-
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/SVG_Logo.svg/800px-SVG_Logo.svg.png"
-                            alt="">
-                    </div>
-                    <div>
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <h1 class="team-name">Departament WEB Design</h1>
+                <div class="team-container">
+                    <div class="team-member">
+                        <div class="pfp"></div>
                         <p>Serban Marius</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="pfp"></div>
                         <p>Zaharia Teodor</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="pfp"></div>
                         <p>Palanga Dragos</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="pfp"></div>
                         <p>Manu Catalin</p>
                     </div>
                 </div>
-                <div class="first">
-                    <h2>Departament Proiectare 3D</h2>
-                    <div class="pfp">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/SVG_Logo.svg/800px-SVG_Logo.svg.png"
-                            alt="">
-                    </div>
-                    <div>
+            </div>
+            <div class="mySlides">
+                <h1 class="team-name">Departament Proiectare 3D</h1>
+                <div class="team-container">
+                    <div class="team-member">
+                        <div class="pfp"></div>
                         <p>Ionescu Eduard</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="pfp"></div>
                         <p>Tudor Alexandru</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="pfp"></div>
                         <p>Moldovan Antonio</p>
                     </div>
                 </div>
-                <div class="first">
-                    <h2>Departament PR</h2>
-                    <div class="pfp">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/SVG_Logo.svg/800px-SVG_Logo.svg.png"
-                            alt="">
-                    </div>
-                    <div>
+            </div>
+
+            <div class="mySlides">
+                <h1 class="team-name">Departament PR</h1>
+                <div class="team-container">
+                    <div class="team-member">
+                        <div class="pfp"></div>
                         <p>Bancescu Andra</p>
                     </div>
                 </div>
-                <div class="first">
-                    <h2>Departament Proiecte Micro:Bit</h2>
-                    <div class="pfp">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/SVG_Logo.svg/800px-SVG_Logo.svg.png"
-                            alt="">
-                    </div>
-                    <div>
+            </div>
+            <div class="mySlides">
+                <h1 class="team-name">Departament Proiecte Micro:Bit</h1>
+                <div class="team-container">
+                    <div class="team-member">
+                        <div class="pfp"></div>
                         <p>A 9-A</p>
                     </div>
                 </div>
-                <div class="first">
-                    <h2>Departament Proiecte Arduino</h2>
-                    <div class="pfp">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/SVG_Logo.svg/800px-SVG_Logo.svg.png"
-                            alt="">
-                    </div>
-                    <div>
+            </div>
+            <div class="mySlides">
+                <h1 class="team-name">Departament Proiecte Arduino</h1>
+                <div class="team-container">
+                    <div class="team-member">
+                        <div class="pfp"></div>
                         <p>A 11-A</p>
-                    </div>
-
+                    </div>                    
                 </div>
             </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
     </members>
     <proiecte id="projects">
         <div class="line" style="width: 100%;"></div>

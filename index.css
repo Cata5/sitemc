@@ -75,7 +75,7 @@ img {
   padding: 1rem;
 }
 
-.header-container h1 {
+.header-container h {
   font-size: clamp(1.95rem, 4vw, 3.75rem);
   background-image: linear-gradient(to right, #AE67FA, #00FFA3);
   -webkit-background-clip: text;
@@ -154,7 +154,8 @@ img {
 .container-members>h1,
 .right h1,
 proiecte h1,
-about h1 {
+about h1,
+members h1{
   background-image: linear-gradient(to right, #AE67FA, #00FFA3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -423,8 +424,90 @@ proiecte h1 {
   border-radius: 80px;
   margin-top: 1rem;
   background-image: linear-gradient(white, white), linear-gradient(to right, #AE67FA, #00FFA3);
-  ;
   background-origin: border-box;
   background-clip: padding-box, border-box;
 
+}
+.slideshow-container {
+  max-width: 1600px;
+  position: relative;
+  margin: auto;
+  height: 400px;
+}
+.team-members{
+  align-self: center;
+  justify-self: center;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.team-member:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%; /* Ensure it takes up the full height of the container */
+}
+.team-container{
+  display: flex;
+  flex-wrap:wrap ;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.team-member p{
+  text-align: center;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.slideshow-container div:first-child{
+  display: flex;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover{
+  background-image: linear-gradient(to right, #AE67FA, #00FFA3);
 }
