@@ -155,7 +155,7 @@ img {
 .right h1,
 proiecte h1,
 about h1,
-members h1{
+members h1,header h1{
   background-image: linear-gradient(to right, #AE67FA, #00FFA3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
