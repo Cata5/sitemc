@@ -22,10 +22,6 @@ html {
   position: relative;
   width: 50%;
 }
-.text{
-  display: flex;
-  position: relative;
-}
 .nav-container {
   display: flex;
   align-items: center;
@@ -68,7 +64,6 @@ members .line {
   margin: auto;
   display: flex;
   padding: 1rem;
-  justify-content: center;
   margin: 5rem 2rem;
 }
 
@@ -80,11 +75,7 @@ members .line {
 }
 
 .text {
-  display: flex;
-  flex-direction: column;
-  margin-top: 2rem;
   color: white;
-  margin-right: 3rem;
   text-align: justify;
 }
 
