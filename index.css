@@ -3,7 +3,7 @@
   --txt-color-1: #81AFDD;
   --body-bg: #04101e;
 }
-.title{
+.title,.team-container p,.title2{
   color:white;
 }
 body {
