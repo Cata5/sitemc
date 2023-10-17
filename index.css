@@ -1,16 +1,8 @@
-::root {
-  --btn-bgcolor: #ff4820;
-  --txt-color-1: #81AFDD;
-  --body-bg: #04101e;
-}
-.title,.team-container p,.title2{
-  color:white;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
 body {
   background-color: #04101e;
   line-height: 1.5;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: calc(100%-6em, 65ch);
   margin: 0 2rem;
 }
@@ -25,20 +17,15 @@ body {
 html {
   scroll-behavior: smooth;
 }
-
-img {
-  display: block;
+.img img{
+  float: right;
+  position: relative;
+  width: 50%;
 }
-.img {
+.text{
   display: flex;
-  width: 180%;
-  background-image: url('./assets/Logo-removebg-preview2.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-  margin-top: 12.5rem;
-  background-size: contain;
+  position: relative;
 }
-
 .nav-container {
   display: flex;
   align-items: center;
@@ -53,7 +40,7 @@ img {
 .nav-container h1 {
   color: white;
   font-weight: 800;
-  font-size: clamp(1rem,2vw,1.75rem);
+  font-size: clamp(1rem, 2vw, 1.75rem);
   margin: 1rem 5rem;
 }
 
@@ -70,17 +57,20 @@ img {
   align-items: baseline;
   cursor: pointer;
 }
-members .line{
+
+members .line {
   width: 100%;
   margin-bottom: 3rem;
 }
+
 .header-container {
   max-width: 100%;
   margin: auto;
   display: flex;
   padding: 1rem;
+  justify-content: center;
+  margin: 5rem 2rem;
 }
-
 
 
 .header-container p {
@@ -155,7 +145,8 @@ members .line{
 .right h1,
 proiecte h1,
 about h1,
-members h1,header h1{
+members h1,
+header h1 {
   background-image: linear-gradient(to right, #AE67FA, #00FFA3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -429,16 +420,19 @@ proiecte h1 {
   background-clip: padding-box, border-box;
 
 }
+
 .slideshow-container {
   max-width: 1600px;
   position: relative;
   margin: auto;
   height: 400px;
 }
-.team-members{
+
+.team-members {
   align-self: center;
   justify-self: center;
 }
+
 /* Hide the images by default */
 .mySlides {
   display: none;
@@ -447,27 +441,33 @@ proiecte h1 {
   justify-content: center;
   gap: 3rem;
 }
+
 .team-member:first-child {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 100%; /* Ensure it takes up the full height of the container */
+  height: 100%;
+  /* Ensure it takes up the full height of the container */
 }
-.team-container{
+
+.team-container {
   display: flex;
-  flex-wrap:wrap ;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 4rem;
 }
-.team-member p{
+
+.team-member p {
   text-align: center;
 }
+
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -489,10 +489,12 @@ proiecte h1 {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
-.slideshow-container div:first-child{
+
+.slideshow-container div:first-child {
   display: flex;
 }
 
@@ -503,12 +505,19 @@ proiecte h1 {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #fff;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover{
+.active,
+.dot:hover {
   background-image: linear-gradient(to right, #AE67FA, #00FFA3);
+}
+
+.title,
+.team-container p,
+.title2 {
+  color: white;
 }
