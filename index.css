@@ -6,6 +6,7 @@
 .title,.team-container p,.title2{
   color:white;
 }
+
 body {
   background-color: #04101e;
   line-height: 1.5;
@@ -52,15 +53,15 @@ img {
 .nav-container h1 {
   color: white;
   font-weight: 800;
-  font-size: 25px;
-  margin: 1rem 8rem;
+  font-size: clamp(1rem,2vw,1.75rem);
+  margin: 1rem 5rem;
 }
 
 .nav-links-container {
   list-style-type: none;
   display: flex;
-  gap: 2rem;
-  margin: 0 4rem;
+  gap: 1.35rem;
+  margin: 0 2rem;
 }
 
 .nav-links-container li>a {
@@ -77,13 +78,6 @@ img {
   padding: 1rem;
 }
 
-.header-container h {
-  font-size: clamp(1.95rem, 4vw, 3.75rem);
-  background-image: linear-gradient(to right, #AE67FA, #00FFA3);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  flex: 1 1 100%;
-}
 
 
 .header-container p {
@@ -93,9 +87,10 @@ img {
 }
 
 .text {
+  display: flex;
+  flex-direction: column;
   margin-top: 2rem;
   color: white;
-  justify-content: end;
   margin-right: 3rem;
   text-align: justify;
 }
