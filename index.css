@@ -3,7 +3,9 @@
   --txt-color-1: #81AFDD;
   --body-bg: #04101e;
 }
-
+.title{
+  color:white;
+}
 body {
   background-color: #04101e;
   line-height: 1.5;
