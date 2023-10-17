@@ -42,3 +42,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "flex";
   dots[slideIndex-1].className += " active";
 }
+function redirectToSectionOnAnotherPage(pageURL, sectionID) {
+  // Redirect to the specified page with the section ID as the fragment identifier
+  window.location.href = `${pageURL}#${sectionID}`;
+}
