@@ -514,7 +514,16 @@ about {
   align-items: center;
   justify-content: center;
 }
-sponsors{
+.sponsors-container{
+  margin-top: 5rem;
   display: flex;
-  margin-top: 4rem;
+  background-color: #042c54;
+}
+
+.sponsors-container .img{
+  display: flex;
+  width: 35%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
 }
