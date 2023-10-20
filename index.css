@@ -224,21 +224,21 @@ about2 h1,about2 p{
     }
 }
 .slide-in {
-  animation-name: slideIn;
-  animation-duration: 1s;
+    animation-name: slideIn;
+    animation-duration: 2s;
 }
 
 .slide-out {
-  animation-name: slideOut;
-  animation-duration: 1s;
+    animation-name: slideOut;
+    animation-duration: 2s;
 }
 
 @keyframes slideIn {
-  from { transform: translateX(100%); }
-  to { transform: translateX(0); }
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
 }
 
 @keyframes slideOut {
-  from { transform: translateX(0); }
-  to { transform: translateX(-100%); }
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
 }
