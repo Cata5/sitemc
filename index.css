@@ -54,10 +54,32 @@ header video{
     position: absolute;
     width: 350px;
 }
-about,about2{
+about2{
     display: block;
-    margin: 10rem 0;
-} 
+    margin: 15rem 0;
+}
+about{
+    margin: 20rem 0;
+    display: flex;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 3rem 0 10rem;
+}
+.mySlides1{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.dot1{
+    position: relative;
+    top: 550px;
+    right: 800px;
+}
 about button{
     border: none;
     width: 150px;
@@ -81,10 +103,6 @@ about img{
 }
 about h1,about2 h1{
     font-size: clamp(2rem,7vw,3rem);
-    max-width: 50%;
-}
-about p,about2 p{
-    max-width: 50%;
 }
 
 about2 h1,about2 p{
@@ -185,7 +203,7 @@ about2 h1,about2 p{
   
   
   /* The dots/bullets/indicators */
-  .dot {
+  .dot,.dot1 {
     cursor: pointer;
     height: 15px;
     width: 15px;
