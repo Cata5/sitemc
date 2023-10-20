@@ -46,13 +46,6 @@ let currentSlideIndex = 1; // Initialize with the first slide
             slides1[currentSlideIndex - 1].style.display = "flex";
             dots[currentSlideIndex - 1].className += " active";
             dots1[currentSlideIndex - 1].className += " active";
-
-            // Remove the slide-in class after the animation is complete
-            setTimeout(() => {
-                slides[currentSlideIndex - 1].classList.remove("slide-in");
-                slides1[currentSlideIndex - 1].classList.remove("slide-in");
-            }, 2000); // Adjust this timing to match your animation duration
         }
-
         // Show the first slide when the page loads
-        showSlides(currentSlideIndex);
+    showSlides(currentSlideIndex);

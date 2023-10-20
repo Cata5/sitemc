@@ -75,6 +75,9 @@ about{
     justify-content: center;
     gap: 3rem;
 }
+.mySlides1:nth-child(even){
+    flex-direction: row-reverse;
+}
 .dot1{
     position: relative;
     top: 550px;
