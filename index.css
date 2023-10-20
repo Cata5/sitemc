@@ -223,11 +223,22 @@ about2 h1,about2 p{
         max-width: 90%;
     }
 }
-.slide-in-out {
-  animation-name: slide;
-  animation-duration: 2s;
+.slide-in {
+  animation-name: slideIn;
+  animation-duration: 1s;
 }
-@keyframes slide {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(0); }
+
+.slide-out {
+  animation-name: slideOut;
+  animation-duration: 1s;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slideOut {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
 }
