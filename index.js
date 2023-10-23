@@ -1,5 +1,27 @@
+function redirectToPage(url) {
+    window.location.href = url;
+}
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+        // Calculate the Y-coordinate of the section
+        const sectionY = section.getBoundingClientRect().top + window.scrollY+20;
+
+        // Scroll smoothly to the section
+        window.scrollTo({
+            top: sectionY,
+            behavior: "smooth"
+        });
+    }
+}
+function goToTeam(sectionid,teamid){
+    scrollToSection(sectionid);
+    currentSlide(teamid);
+}
 
 let currentSlideIndex = 1; // Initialize with the first slide
+let currentSlideIndex1 = 1; // Initialize with the first slide
 
         function plusSlides(n) {
             showSlides(currentSlideIndex += n);
@@ -8,6 +30,14 @@ let currentSlideIndex = 1; // Initialize with the first slide
         function currentSlide(n) {
             showSlides(currentSlideIndex = n);
         }
+        function plusSlides1(n) {
+            showSlides(currentSlideIndex1 += n);
+        }
+
+        function currentSlide1(n) {
+            showSlides(currentSlideIndex1 = n);
+        }
+
 
         function showSlides(n) {
             let i;
@@ -19,11 +49,11 @@ let currentSlideIndex = 1; // Initialize with the first slide
                 currentSlideIndex = 1;
             }
             if (n > slides1.length) {
-                currentSlideIndex = 1;
+                currentSlideIndex1 = 1;
             }
             if (n < 1) {
                 currentSlideIndex = slides.length;
-                currentSlideIndex = slides1.length;
+                currentSlideIndex1 = slides1.length;
             }
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
@@ -42,10 +72,12 @@ let currentSlideIndex = 1; // Initialize with the first slide
             // Add the slide-in and slide-out classes to the displayed slide
             slides[currentSlideIndex - 1].classList.add("slide-in");
             slides[currentSlideIndex - 1].style.display = "flex";
-            slides1[currentSlideIndex - 1].classList.add("slide-in");
-            slides1[currentSlideIndex - 1].style.display = "flex";
+            slides1[currentSlideIndex1 - 1].classList.add("slide-in");
+            slides1[currentSlideIndex1 - 1].style.display = "flex";
             dots[currentSlideIndex - 1].className += " active";
-            dots1[currentSlideIndex - 1].className += " active";
+            dots1[currentSlideIndex1 - 1].className += " active";
         }
         // Show the first slide when the page loads
     showSlides(currentSlideIndex);
+    showSlides(currentSlideIndex1);
+

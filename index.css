@@ -26,6 +26,7 @@ nav{
 }
 .nav-container a,.nav-container-small a{
     text-decoration: none;
+cursor: pointer !important;
     color: black;
 }
 .nav-container-small{
@@ -78,10 +79,13 @@ about{
 .mySlides1:nth-child(even){
     flex-direction: row-reverse;
 }
-.dot1{
+.dots{
+    display: flex;
+    justify-content: center;
+
     position: relative;
-    top: 550px;
-    right: 800px;
+    left: calc(-45%);
+    align-items: flex-end;
 }
 about button{
     border: none;

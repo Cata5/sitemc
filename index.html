@@ -9,12 +9,12 @@
     <title>Orasul Eco-Tech</title>
 </head>
 
-<body>
+<body id="about">
     <nav>
         <h1>Orasul Eco-Tech</h1>
         <div class="nav-container">
             <h1>Orasul Eco-Tech</h1>
-            <a href="">Despre noi</a>
+            <a onclick="scrollToSection('about')">Despre noi</a>
             <a href="">Proiecte</a>
             <a href="">Echipe</a>
             <a href=""></a>
@@ -66,7 +66,7 @@
                         station.</p>
                     <div class="btns">
                         <button>Tutorial</button>
-                        <button>Team Members</button>
+                        <button onclick="goToTeam('members','3')">Team Members</button>
                     </div>
                 </div>
                 <div class="img"><img src="./IMG_5023-removebg-preview.png" /></div>
@@ -107,16 +107,16 @@
                 </div>
                 <div class="img"><img src="./IMG_5023-removebg-preview.png" /></div>
             </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides1(1)">&#10095;</a>
         </div>
         <br>
-        <div style="text-align:center">
-            <span class="dot1 active" onclick="currentSlide(1)"></span>
-            <span class="dot1" onclick="currentSlide(2)"></span>
-            <span class="dot1" onclick="currentSlide(3)"></span>
-            <span class="dot1" onclick="currentSlide(4)"></span>
-            <span class="dot1" onclick="currentSlide(5)"></span>
+        <div style="text-align:center" class="dots">
+            <span class="dot1 active" onclick="currentSlide1(1)"></span>
+            <span class="dot1" onclick="currentSlide1(2)"></span>
+            <span class="dot1" onclick="currentSlide1(3)"></span>
+            <span class="dot1" onclick="currentSlide1(4)"></span>
+            <span class="dot1" onclick="currentSlide1(5)"></span>
         </div>
     </about>
     <about2>
