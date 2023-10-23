@@ -9,7 +9,7 @@ nav{
     background-color: #fff;
     font-size: clamp(.8rem,3vw,1rem);
 }
-.nav-container,.nav-container-small{
+.nav-container{
     display: flex;
     justify-content: space-around;
     gap: 4rem;
@@ -24,13 +24,10 @@ nav{
     background-color: #fff;
     z-index: 1000;
 }
-.nav-container a,.nav-container-small a{
+.nav-container a{
     text-decoration: none;
 cursor: pointer !important;
     color: black;
-}
-.nav-container-small{
-    display: none;
 }
 header{
     display: flex;

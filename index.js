@@ -6,7 +6,7 @@ function scrollToSection(sectionId) {
 
     if (section) {
         // Calculate the Y-coordinate of the section
-        const sectionY = section.getBoundingClientRect().top + window.scrollY+20;
+        const sectionY = section.getBoundingClientRect().top + window.scrollY-100;
 
         // Scroll smoothly to the section
         window.scrollTo({
