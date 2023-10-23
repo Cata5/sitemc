@@ -12,7 +12,6 @@ nav{
 .nav-container{
     display: flex;
     justify-content: space-around;
-    gap: 4rem;
 }
 .nav-container{
     display: flex;
@@ -106,7 +105,7 @@ about img{
     top: 0;
 }
 about h1,about2 h1{
-    font-size: clamp(2rem,7vw,3rem);
+    font-size: clamp(1.5rem,6vw,2.5rem);
 }
 
 about2 h1,about2 p{
