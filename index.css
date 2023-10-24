@@ -245,6 +245,7 @@ about2 h1,about2 p{
     }
 }
 .sponsors-container{
+    border-top: 1px  solid black;
     margin-top: 5rem;
     display: flex;
     background-color: #fff;
