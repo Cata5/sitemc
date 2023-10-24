@@ -1,12 +1,12 @@
 function redirectToPage(url) {
     window.location.href = url;
 }
-function scrollToSection(sectionId) {
+function scrollToSection(sectionId,value) {
     const section = document.getElementById(sectionId);
 
     if (section) {
         // Calculate the Y-coordinate of the section
-        const sectionY = section.getBoundingClientRect().top + window.scrollY-100;
+        const sectionY = section.getBoundingClientRect().top + window.scrollY-value;
 
         // Scroll smoothly to the section
         window.scrollTo({
