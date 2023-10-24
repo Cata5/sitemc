@@ -165,7 +165,11 @@ about2 h1,about2 p{
     align-items: center;
     gap: 4rem;
   }
-  
+  .team-member{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .team-member p {
     text-align: center;
     
