@@ -6,3 +6,29 @@ body{
     align-items: center;
     justify-content: center;
 }
+nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #fff;
+    font-size: clamp(.8rem, 3vw, 1rem);
+}
+nav h1{
+    cursor: pointer;
+}
+.title{
+    margin: 5rem 0 2rem 0;
+}
+@media screen and (max-width: 800px) {
+    .nav-container {
+        display: none;
+    }
+
+    nav {
+        justify-content: center;
+    }
+}
