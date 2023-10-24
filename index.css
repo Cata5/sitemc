@@ -1,19 +1,22 @@
-body{
+body {
     margin: 0 4rem;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     overflow-x: hidden;
 }
-nav{
-    display:flex;
+
+nav {
+    display: flex;
     align-items: center;
     background-color: #fff;
-    font-size: clamp(.8rem,3vw,1rem);
+    font-size: clamp(.8rem, 3vw, 1rem);
 }
-.nav-container{
+
+.nav-container {
     display: flex;
     justify-content: space-around;
 }
-.nav-container{
+
+.nav-container {
     display: flex;
     align-items: center;
     position: fixed;
@@ -23,59 +26,74 @@ nav{
     background-color: #fff;
     z-index: 1000;
 }
-.nav-container a{
+
+.nav-container a {
     text-decoration: none;
-cursor: pointer !important;
+    cursor: pointer !important;
     color: black;
 }
-header{
+
+header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 15rem;
 }
-header h1{
+
+header h1 {
     text-align: center;
     max-width: 45%;
-    font-size: clamp(1.5rem,5vw,2.5rem);
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
 }
-header p{
+
+header p {
     text-align: center;
     position: relative;
     top: 150px;
     max-width: 55%;
 }
-header video{
+
+header video {
     z-index: -10;
     position: absolute;
     width: 350px;
 }
-about2{
+
+about2 {
     display: block;
     margin: 15rem 0;
 }
-about{
+
+about {
     margin: 20rem 0;
     display: flex;
 }
-.text{
+
+.text {
     display: flex;
     flex-direction: column;
     max-width: 100%;
     margin: 0 3rem 0 10rem;
 }
-.mySlides1{
+
+.mySlides1 {
     display: none;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 3rem;
 }
-.mySlides1:nth-child(even){
+
+.mySlides1 img {
+    width: clamp(450px, 15vw, 1000px);
+}
+
+.mySlides1:nth-child(even) {
     flex-direction: row-reverse;
 }
-.dots{
+
+.dots {
     display: flex;
     justify-content: center;
 
@@ -83,71 +101,84 @@ about{
     left: calc(-45%);
     align-items: flex-end;
 }
-about button{
+
+about button {
     border: none;
     width: 150px;
     aspect-ratio: 1.5;
     font-size: large;
     background-color: transparent;
 }
-about button:hover{
+
+about button:hover {
     cursor: pointer;
     background-color: darkgrey;
 }
-.btns{
+
+.btns {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
-about img{
+
+about img {
     float: right;
     position: relative;
     top: 0;
 }
-about h1,about2 h1{
-    font-size: clamp(1.5rem,6vw,2.5rem);
+
+about h1,
+about2 h1 {
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
 }
 
-about2 h1,about2 p{
+about2 h1,
+about2 p {
     max-width: 65%;
 }
-.info{
+
+.info {
     display: flex;
     flex: 1;
     flex-direction: row;
-    
+
 }
-.content,.content h1,.content p{
+
+.content,
+.content h1,
+.content p {
     min-width: 38%;
 }
-.content h1{
-    font-size: clamp(1.35rem,3vw,1.75rem);
+
+.content h1 {
+    font-size: clamp(1.35rem, 3vw, 1.75rem);
 }
+
 .pfp {
     width: 125px;
     aspect-ratio: 1;
-    border:solid 4px black;
-    border-radius: 80px ;
+    border: solid 4px black;
+    border-radius: 80px;
     margin-top: 1rem;
-  }
-  
-  .slideshow-container {
+}
+
+.slideshow-container {
     max-width: 1600px;
     position: relative;
     margin: auto;
     min-height: 400px;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
+}
+
+/* Hide the images by default */
+.mySlides {
     display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 3rem;
-  }
-  
-  .team-member:first-child {
+}
+
+.team-member:first-child {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -155,8 +186,9 @@ about2 h1,about2 p{
     text-align: center;
     height: 100%;
     /* Ensure it takes up the full height of the container */
-  }
-  .team-container {
+}
+
+.team-container {
     display: flex;
     flex-wrap: wrap;
     min-height: 0;
@@ -164,20 +196,22 @@ about2 h1,about2 p{
     justify-content: center;
     align-items: center;
     gap: 4rem;
-  }
-  .team-member{
+}
+
+.team-member {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .team-member p {
-    text-align: center;
-    
-  }
+}
 
-  /* Next & previous buttons */
-  .prev,
-  .next {
+.team-member p {
+    text-align: center;
+
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -190,27 +224,28 @@ about2 h1,about2 p{
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
+}
+
+/* Position the "next button" to the right */
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev,
-  .next {
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev,
+.next {
     background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  .slideshow-container div:first-child {
+}
+
+.slideshow-container div:first-child {
     display: flex;
-  }
-  
-  
-  /* The dots/bullets/indicators */
-  .dot,.dot1 {
+}
+
+
+/* The dots/bullets/indicators */
+.dot,
+.dot1 {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -219,55 +254,86 @@ about2 h1,about2 p{
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
-  .team-name{
+}
+
+.team-name {
     margin-bottom: 5rem;
     text-align: center;
-  }
-  .active,
-  .dot:hover {
+}
+
+.active,
+.dot:hover {
     background-color: black;
-  }
-@media screen and (max-width: 800px) {
-    .nav-container{
-        display: none;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .mySlides1,
+    .mySlides1:nth-child(even) {
+        flex-direction: column;
     }
-    nav{
-        justify-content: center;
+
+    .mySlides1 img {
+        width: clamp(450px, 7vw, 50px);
+        margin-bottom: 2rem;
     }
-    about2 h1{
-        max-width: 85%;
-    }
-    about2 span{
-        margin-top: 5rem;
-    }
-    about2,.info{
+
+    about2,
+    .info {
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
         margin: auto;
         max-width: 90%;
     }
+
+    members {
+        scale: .5;
+    }
 }
-.sponsors-container{
-    border-top: 1px  solid black;
+
+@media screen and (max-width: 800px) {
+    .nav-container {
+        display: none;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    about2 h1 {
+        max-width: 85%;
+    }
+
+    about2 span {
+        margin-top: 5rem;
+    }
+
+}
+
+.sponsors-container {
+    border-top: 1px solid black;
     margin-top: 5rem;
     display: flex;
     background-color: #fff;
     align-items: center;
-  }
-  .sponsors-container .img:first-child img{
+}
+
+.sponsors-container .img:first-child img {
     width: 35%;
-  }
-  .sponsors-container .img:last-child img{
+}
+
+.sponsors-container .img:last-child img {
     width: 35%;
-  }
-  .sponsors-container .img{
+}
+
+.sponsors-container .img {
     display: flex;
     width: 25%;
     margin: auto;
     align-items: center;
     justify-content: center;
-  }
+}
+
 .slide-in {
     animation-name: slideIn;
     animation-duration: 2s;
@@ -279,11 +345,21 @@ about2 h1,about2 p{
 }
 
 @keyframes slideIn {
-    from { transform: translateX(100%); }
-    to { transform: translateX(0); }
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }
 
 @keyframes slideOut {
-    from { transform: translateX(0); }
-    to { transform: translateX(-100%); }
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
 }
