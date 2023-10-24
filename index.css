@@ -244,6 +244,25 @@ about2 h1,about2 p{
         max-width: 90%;
     }
 }
+.sponsors-container{
+    margin-top: 5rem;
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+  }
+  .sponsors-container .img:first-child img{
+    width: 35%;
+  }
+  .sponsors-container .img:last-child img{
+    width: 35%;
+  }
+  .sponsors-container .img{
+    display: flex;
+    width: 25%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
 .slide-in {
     animation-name: slideIn;
     animation-duration: 2s;

@@ -15,8 +15,8 @@ function scrollToSection(sectionId,value) {
         });
     }
 }
-function goToTeam(sectionid,teamid){
-    scrollToSection(sectionid);
+function goToTeam(sectionid,teamid,value){
+    scrollToSection(sectionid,value);
     currentSlide(teamid);
 }
 
