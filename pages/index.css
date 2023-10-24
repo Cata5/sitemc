@@ -23,6 +23,19 @@ nav h1{
 .title{
     margin: 5rem 0 2rem 0;
 }
+.bar{
+    display: flex;
+    flex-direction: row;
+    background-color: aquamarine;
+    gap: 5rem;
+}
+.bar img{
+    cursor: pointer;
+    max-width: 25px;
+}
+pre{
+    background-color: lightgray ;
+}
 @media screen and (max-width: 800px) {
     .nav-container {
         display: none;
