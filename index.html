@@ -59,7 +59,7 @@
                         difuzor care emite diferite sunete in functie de nivelul poluarii.</p>
                     <div class="btns">
                         <button onclick="redirectToPage('./pages/Air Quality Control Device.html')">Tutorial</button>
-                        <button onclick="goToTeam('members','4','0')">Team Members</button>
+                        <button onclick="goToTeam('members','1','0')">Team Members</button>
                     </div>
                 </div>
                 <div class="img"><img src="./assets/IMG_5097.png" /></div>
@@ -69,14 +69,10 @@
                     <span>Inoveaza</span>
 
                     <h1>Masina de gunoi</h1>
-                    <p>Algoritmul folosit consta in prelarea datelor din senzorul MQ-135 care detecteaza
-                        NH3,NOx,alcohol,
-                        Benzen,fum,CO2 ,etc cat si din senzorul DHT22 care preia temperatura si umiditatea aerului ,
-                        combinadu-le
-                        pentru a avea un rezultat cat mai precis.</p>
+                    <p></p>
                     <div class="btns">
                         <button onclick="redirectToPage('./pages/Masina de gunoi.html')">Tutorial</button>
-                        <button>Team Members</button>
+                        <button onclick="goToTeam('members','2','0')">Team Members</button>
                     </div>
                 </div>
                 <div class="img"><img src="./assets/IMG-20231009-WA0013.jpg" /></div>
@@ -84,22 +80,17 @@
             <div class="mySlides1">
                 <div class="text">
                     <span>Inoveaza</span>
-
-                    <h1>Measure and Monitor Weather Conditions with
-                        Precision</h1>
-                    <p>Our weather station project is designed to provide accurate and real-time data on various weather
-                        conditions.
-                        With advanced sensors and cutting- edge technology, you can rely on our system to monitor
-                        temperature,
-                        humidity, air quality, UV light, and more. Stay informed and make informed decisions with our
-                        weather
-                        station.</p>
+                    <h1>Smart Flower Pot</h1>
+                    <p>Acest ghiveci folosește o pompa de apa ce v-a uda automat planta când umiditatea din sol
+                        scade sub 50%. Ne-am folosit de un senzor de nivel al apei care măsoară câtă apa mai este în ghiveci și un
+                        senzor de umiditate al solului, valorile umidității și a nivelului apei citite de Arduino Uno fiind afișate
+                        ulterior pe un ecran LCD de la baza ghiveciului</p>
                     <div class="btns">
-                        <button>Tutorial</button>
-                        <button>Team Members</button>
+                        <button onclick="redirectToPage('./pages/Smart Flower Pot.html')">Tutorial</button>
+                        <button onclick="goToTeam('members','3','0')">Team Members</button>
                     </div>
                 </div>
-                <div class="img"><img src="./assets/IMG_5023-removebg-preview.png" /></div>
+                <div class="img"><img src="./assets/flower_pot.png" /></div>
             </div>
             <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides1(1)">&#10095;</a>
@@ -135,54 +126,6 @@
     <members id="members">
         <div class="slideshow-container">
             <div class="mySlides">
-                <h1 class="team-name">Departament WEB Design</h1>
-                <div class="team-container">
-                    <div class="team-member">
-                        <div class="pfp"></div>
-                        <p>Serban Marius</p>
-                    </div>
-                    <div class="team-member">
-                        <div class="pfp"></div>
-                        <p>Zaharia Teodor</p>
-                    </div>
-                    <div class="team-member">
-                        <div class="pfp"></div>
-                        <p>Palanga Dragos</p>
-                    </div>
-                    <div class="team-member">
-                        <div class="pfp"></div>
-                        <p>Manu Catalin</p>
-                    </div>
-                </div>
-            </div>
-            <div class="mySlides">
-                <h1 class="team-name">Departament Proiectare 3D</h1>
-                <div class="team-container">
-                    <div class="team-member">
-                        <div class="pfp"></div>
-                        <p>Ionescu Eduard</p>
-                    </div>
-                    <div class="team-member">
-                        <div class="pfp"></div>
-                        <p>Tudor Alexandru</p>
-                    </div>
-                    <div class="team-member">
-                        <div class="pfp"></div>
-                        <p>Moldovan Antonio</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mySlides">
-                <h1 class="team-name">Departament Media</h1>
-                <div class="team-container">
-                    <div class="team-member">
-                        <div class="pfp"></div>
-                        <p>Bancescu Andra</p>
-                    </div>
-                </div>
-            </div>
-            <div class="mySlides">
                 <h1 class="team-name">Air Qulaity Control Device</h1>
                 <div class="team-container">
                     <div class="team-member">
@@ -199,6 +142,51 @@
                     </div>
                 </div>
             </div>
+            <div class="mySlides">
+                <h1 class="team-name">Masina de Gunoi</h1>
+                <div class="team-container">
+                    <div class="team-member">
+                        <div class="pfp"></div>
+                        <p>Geanta Eric</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="pfp"></div>
+                        <p></p>
+                    </div>
+                    <div class="team-member">
+                        <div class="pfp"></div>
+                        <p></p>
+                    </div>
+                    <div class="team-member">
+                        <div class="pfp"></div>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides">
+                <h1 class="team-name">Smart Flower Pot</h1>
+                <div class="team-container">
+                    <div class="team-member">
+                        <div class="pfp"></div>
+                        <p>Gardin Iannis</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="pfp"></div>
+                        <p>Ivascu George</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <h1 class="team-name">Departament Media</h1>
+                <div class="team-container">
+                    <div class="team-member">
+                        <div class="pfp"></div>
+                        <p>Bancescu Andra</p>
+                    </div>
+                </div>
+            </div>
+           
             <div class="mySlides">
                 <h1 class="team-name">Departament Proiecte Arduino</h1>
                 <div class="team-container">

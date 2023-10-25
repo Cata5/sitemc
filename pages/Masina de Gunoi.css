@@ -1,5 +1,6 @@
-.item .pfp{
-    background-image: none;
+.item:first-child .pfp{
+    background-image: url('../assets/kit-robot-buggy-move-mk2-pentru-bbc-microbit.jpg');
+    background-size: contain;
 }
 images .img{
     scale: 1.55;

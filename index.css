@@ -84,8 +84,14 @@ about {
     justify-content: center;
 }
 
+.mySlides1:nth-child(3) .img img{
+    width: 90%;
+} 
+.mySlides1:nth-child(3) .text{
+    width: 50%;
+} 
 .mySlides1 img {
-    width: clamp(450px, 15vw, 1000px);
+    width: clamp(450px, 12vw, 800px);
 }
 
 .mySlides1:nth-child(even) {
