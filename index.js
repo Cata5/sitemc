@@ -1,6 +1,9 @@
 function redirectToPage(url) {
     window.location.href = url;
 }
+function redirectToLink(url) {
+    window.location.replace= url;
+}
 function scrollToSection(sectionId,value) {
     const section = document.getElementById(sectionId);
 

@@ -54,6 +54,9 @@ components{
     justify-content: space-between;
     gap: 2rem;
 }
+.item h2{
+    cursor: pointer;
+}
 .item:first-child .pfp{
     background-image: url("../assets/mq-135.png");
     background-repeat: no-repeat;
