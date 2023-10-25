@@ -4,6 +4,7 @@ body{
 }
 nav {
     display: flex;
+    z-index: 10;
     position: fixed;
     top: 0;
     left: 0;
@@ -48,14 +49,29 @@ components{
     gap: 4rem;
     flex-direction: column;
 }
+images{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 450px;
+}
+.img img{
+    max-width: 35%;
+    scale: 1.35;
+}
+
 .container-components{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 2rem;
-}
-.item h2{
-    cursor: pointer;
 }
 .item:first-child .pfp{
     background-image: url("../assets/mq-135.png");
