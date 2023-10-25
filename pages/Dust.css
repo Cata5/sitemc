@@ -1,0 +1,17 @@
+.item:first-child .pfp{
+    background-image: url("../assets/ard_uno.png");
+}
+.item:nth-child(2) .pfp{
+    background-image: url("../assets/uv_sensor.jpg");
+    background-size: 350%;
+}
+.item:nth-child(3) .pfp{
+    background-image: url("../assets/oled.jpg");
+    background-size: 100%;
+}
+.item:nth-child(4) .pfp{
+    background-image: url("../assets/barometric.jpg");
+}
+images .img{
+    scale: 1.55;
+}
