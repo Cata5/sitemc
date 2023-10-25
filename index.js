@@ -81,3 +81,18 @@ let currentSlideIndex1 = 1; // Initialize with the first slide
     showSlides(currentSlideIndex);
     showSlides(currentSlideIndex1);
 
+    function copyText() {
+        var copyText = document.getElementById("code");
+        copyText.select();
+        document.execCommand("copy");
+
+        var copyButton = document.getElementById("copy-button");
+        
+        // Change button text to "Copied!"
+        copyButton.textContent = "Copied!";
+        
+        // After 3 seconds, change it back to "Copy"
+        setTimeout(function() {
+            copyButton.textContent = "Copy";
+        }, 3000);
+    }
