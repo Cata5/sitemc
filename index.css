@@ -82,7 +82,6 @@ about {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
 }
 
 .mySlides1 img {
