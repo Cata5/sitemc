@@ -1,0 +1,12 @@
+
+.item:nth-child(1) .pfp{
+    background-image: url('../assets/microbit.webp');
+    background-size: 80%;   
+}
+images .img{
+    scale: 1.5;
+    margin: 3rem 0 3rem 0;
+}
+images .img:first-child{
+    scale: 2;
+}
