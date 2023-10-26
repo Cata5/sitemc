@@ -270,7 +270,53 @@ about2 p {
 .dot:hover {
     background-color: black;
 }
-
+ .pfp1{
+    background-image: url('./assets/Peter.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center ;
+}
+.pfp2{
+    background-image: url('./assets/Ana.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center ;
+}
+ .pfp3{
+    background-image: url('./assets/Irimescu.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center ;
+}
+.pfp4{
+    background-image: url('./assets/Eric.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center ;
+}
+.pfp5{
+    background-image: url('./assets/Alexandra.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center ;
+}
+.pfp12{
+    background-image: url('./assets/Iannis.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center ;
+}
+.pfp13{
+    background-image: url('./assets/George.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.pfp100{
+    background-image: url('./assets/dada.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 @media screen and (max-width: 1100px) {
 
     .mySlides1,
