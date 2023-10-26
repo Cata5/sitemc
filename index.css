@@ -94,10 +94,6 @@ about {
     width: clamp(450px, 12vw, 800px);
 }
 
-.mySlides1:nth-child(even) {
-    flex-direction: row-reverse;
-}
-
 .dots {
     display: flex;
     justify-content: center;
@@ -319,8 +315,7 @@ about2 p {
 }
 @media screen and (max-width: 1100px) {
 
-    .mySlides1,
-    .mySlides1:nth-child(even) {
+    .mySlides1{
         flex-direction: column;
     }
 
