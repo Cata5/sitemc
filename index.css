@@ -296,6 +296,24 @@ about2 p {
     background-size: 100%;
     background-position: center ;
 }
+.pfp8{
+    background-image: url('./assets/Ileana\ MAria\ Flavia.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center ;
+}
+.pfp10{
+    background-image: url('./assets/Trufasila\ Claudiu.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center ;
+}
+.pfp11{
+    background-image: url('./assets/Dobre\ Andrei.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center ;
+}
 .pfp12{
     background-image: url('./assets/Iannis.jpeg');
     background-repeat: no-repeat;
@@ -306,6 +324,12 @@ about2 p {
     background-image: url('./assets/George.jpeg');
     background-repeat: no-repeat;
     background-size: 100%;
+}
+.pfp16{
+    background-image: url("./assets/Chineata\ Razvan.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center ;
 }
 .pfp100{
     background-image: url('./assets/dada.jpg');
