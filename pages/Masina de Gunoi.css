@@ -2,6 +2,13 @@
     background-image: url('../assets/kit-robot-buggy-move-mk2-pentru-bbc-microbit.jpg');
     background-size: contain;
 }
+.item:nth-child(2) .pfp{
+    background-image: url('../assets/microbit.webp');
+    background-size: 80%;   
+}
+.item:nth-child(3) .pfp{
+    background-image: url('../assets/lego.png');
+}
 images .img{
     scale: 1.55;
 }
