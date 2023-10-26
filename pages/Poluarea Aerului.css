@@ -1,0 +1,16 @@
+video{
+    display: flex;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+images .img{
+    scale: 1.5;
+    margin: 3rem 0 3rem 0;
+}
+images .img:first-child{
+    scale: 2;
+}
