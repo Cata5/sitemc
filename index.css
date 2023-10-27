@@ -441,6 +441,18 @@ about2 p {
     background-size: cover;
     background-repeat: no-repeat;
 }
+.pfp33{
+    background-image: url('./assets/Cristina\ Alexandra.jpg');
+    background-position: -30px center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pfp34{
+    background-image: url('./assets/Alex\ Tudor.JPG');
+    background-position: -30px center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .pfp100{
     background-image: url('./assets/dada.jpg');
     background-position: center;
