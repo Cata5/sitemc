@@ -296,6 +296,12 @@ about2 p {
     background-size: 100%;
     background-position: center ;
 }
+.pfp6{
+    background-image: url('./assets/Antonia.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
 .pfp8{
     background-image: url('./assets/Ileana\ MAria\ Flavia.jpeg');
     background-repeat: no-repeat;
@@ -331,6 +337,12 @@ about2 p {
     background-repeat: no-repeat;
     background-size: 100%;
 }
+.pfp14{
+    background-image: url('./assets/manu\ Catalin.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 150%;
+}
 .pfp16{
     background-image: url("./assets/Chineata\ Razvan.jpeg");
     background-repeat: no-repeat;
@@ -363,8 +375,8 @@ about2 p {
     background-repeat: no-repeat;
 }
 .pfp24{
-    background-image: url('./assets/Ionita\ Octavian\ Stefan.jpeg');
-    background-position: -1px center center;
+    background-image: url('./assets/Ionita\ Octavian\ Stefan.jpg');
+    background-position: -20px center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -396,6 +408,24 @@ about2 p {
     background-image: url('./assets/Andreea.jpeg');
     background-position: 1px center;
     background-size: 100%;
+    background-repeat: no-repeat;
+}
+.pfp30{
+    background-image: url('./assets/Ela.jpeg');
+    background-position: 1px center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pfp31{
+    background-image: url('./assets/Safta\ Catalin.jpg');
+    background-position: -25px center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pfp32{
+    background-image: url('./assets/Alexandru.jpeg.jpg');
+    background-position: -30px center;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .pfp100{
