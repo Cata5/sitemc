@@ -302,11 +302,17 @@ about2 p {
     background-size: 100%;
     background-position: center center ;
 }
+.pfp9{
+    background-image: url('./assets/Telinoiu\ Nicolle\ Maria\ \(1\).jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -80px center center;
+}
 .pfp10{
     background-image: url('./assets/Trufasila\ Claudiu.jpeg');
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: center center ;
+    background-position: center center;
 }
 .pfp11{
     background-image: url('./assets/Dobre\ Andrei.jpeg');
@@ -330,6 +336,25 @@ about2 p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center ;
+}
+.pfp20{
+    background-image: url('./assets/Vanesa.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pfp21{
+    background-image: url('./assets/Ariana.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pfp22{
+    background-image: url('./assets/Dragos.jpeg');
+    background-position: center;
+    transform: rotate(-90deg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .pfp100{
     background-image: url('./assets/dada.jpg');
