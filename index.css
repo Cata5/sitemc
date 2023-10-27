@@ -356,6 +356,18 @@ about2 p {
     background-size: cover;
     background-repeat: no-repeat;
 }
+.pfp23{
+    background-image: url('./assets/Robin.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pfp24{
+    background-image: url('./assets/Ionita\ Octavian\ Stefan.jpeg');
+    background-position: -1px center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .pfp100{
     background-image: url('./assets/dada.jpg');
     background-position: center;
