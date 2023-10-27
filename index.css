@@ -314,6 +314,12 @@ about2 p {
     background-size: cover;
     background-position: -80px center center;
 }
+.pfp7{
+    background-image: url('./assets/Badea\ Mihaela.jpg');
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: center center;
+}
 .pfp10{
     background-image: url('./assets/Trufasila\ Claudiu.jpeg');
     background-repeat: no-repeat;
@@ -341,6 +347,13 @@ about2 p {
     background-image: url('./assets/manu\ Catalin.jpg');
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: 150%;
+}
+
+.pfp15{
+    background-image: url('./assets/Ionescu\ Edi.jpg');
+    background-repeat: no-repeat;
+    background-position: 3px center center;
     background-size: 150%;
 }
 .pfp16{
