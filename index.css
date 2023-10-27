@@ -386,6 +386,18 @@ about2 p {
     background-size: 100%;
     background-repeat: no-repeat;
 }
+.pfp28{
+    background-image: url('./assets/Bancescu\ Andra.jpeg');
+    background-position: 1px center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.pfp29{
+    background-image: url('./assets/Andreea.jpeg');
+    background-position: 1px center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
 .pfp100{
     background-image: url('./assets/dada.jpg');
     background-position: center;
