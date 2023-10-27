@@ -368,6 +368,24 @@ about2 p {
     background-size: cover;
     background-repeat: no-repeat;
 }
+.pfp25{
+    background-image: url('./assets/Geanta\ Sebastian.jpeg');
+    background-position: -1px center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pfp26{
+    background-image: url('./assets/Tudor\ Matei.jpeg');
+    background-position: 1px center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.pfp27{
+    background-image: url('./assets/Burciu\ Ionut.jpeg');
+    background-position: 1px center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
 .pfp100{
     background-image: url('./assets/dada.jpg');
     background-position: center;
